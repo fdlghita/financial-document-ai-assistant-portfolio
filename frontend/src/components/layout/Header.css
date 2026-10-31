@@ -1,0 +1,15 @@
+.v2-header {
+  padding: 24px;
+}
+
+.v2-header h1 {
+  margin: 14px 0 8px;
+  font-size: 30px;
+  color: var(--bvc-blue-dark);
+}
+
+.v2-header p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
