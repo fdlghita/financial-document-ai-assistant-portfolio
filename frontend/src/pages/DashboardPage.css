@@ -1,0 +1,148 @@
+.dashboard-hero {
+  padding: 34px;
+  min-height: 260px;
+  background: var(--bvc-blue-soft);
+}
+
+.dashboard-hero h2 {
+  font-size: 36px;
+  max-width: 780px;
+  margin: 18px 0 12px;
+  color: var(--bvc-blue-dark);
+}
+
+.dashboard-hero p {
+  max-width: 760px;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+.dashboard-actions {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.dashboard-stats {
+  margin-top: 18px;
+}
+
+.stat-card span {
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+.stat-card strong {
+  display: block;
+  font-size: 32px;
+  margin: 14px 0 6px;
+  color: var(--bvc-blue-dark);
+}
+
+.stat-card small {
+  font-weight: 800;
+}
+
+.stat-card small.positive {
+  color: var(--success);
+}
+
+.stat-card small.neutral {
+  color: var(--bvc-blue);
+}
+
+.dashboard-recent-grid {
+  margin-top: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+}
+
+.recent-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--bvc-blue-dark);
+  margin-bottom: 14px;
+}
+
+.recent-card-header h3 {
+  margin: 0;
+  font-size: var(--font-size-md);
+}
+
+.recent-list {
+  display: grid;
+  gap: 4px;
+}
+
+.recent-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 8px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.recent-item:hover {
+  background: var(--bg-subtle);
+}
+
+.recent-item strong {
+  display: block;
+  color: var(--text-main);
+  font-size: var(--font-size-sm);
+}
+
+.recent-item-meta {
+  display: block;
+  color: var(--text-muted);
+  font-size: var(--font-size-xs);
+  margin-top: 2px;
+}
+
+.recent-item-date {
+  color: var(--text-muted);
+  font-size: var(--font-size-xs);
+  white-space: nowrap;
+}
+
+.dashboard-modules {
+  margin-top: 18px;
+}
+
+.module-card {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.module-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  color: var(--bvc-blue);
+  background: var(--bvc-blue-soft);
+}
+
+.module-card h3 {
+  margin: 0 0 8px;
+  color: var(--bvc-blue-dark);
+}
+
+.module-card p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 1050px) {
+  .v2-grid-4,
+  .dashboard-recent-grid {
+    grid-template-columns: 1fr;
+  }
+}
