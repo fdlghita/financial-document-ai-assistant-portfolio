@@ -1,0 +1,67 @@
+# Local secrets and credentials
+.env
+.env.*
+!.env.example
+!**/.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*credentials*.json
+*service-account*.json
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Frontend
+node_modules/
+frontend/build/
+frontend/.env.local
+frontend/.env.*.local
+
+# Editors and OS
+.DS_Store
+.idea/
+.vscode/
+
+# Generated artifacts
+dist/
+build/
+*.log
+*.err
+backend_log*.txt
+llama_server.log*
+backend/uvicorn.log
+backend/temp_results/
+tmp_ask_short.json
+
+# Drupal compiled frontend assets
+drupal/bourse_ai_workspace/js/build/*
+!drupal/bourse_ai_workspace/js/build/.gitkeep
+
+# Downloaded LLMs, embeddings, vector stores
+models/*.gguf
+models/*.bin
+models/.cache/
+chroma_db/
+**/chroma_db/
+**/chroma.sqlite3
+*.sqlite
+*.sqlite3
+
+# Private uploaded files, chat history and generated documents
+backend/uploads/*
+!backend/uploads/.gitkeep
+*.pdf
+
+# Local datasets and backups (review before publishing any datasets)
+*.bak
+*.backup
+*.dump
